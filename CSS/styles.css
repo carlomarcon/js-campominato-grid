@@ -23,11 +23,14 @@ header {
   height: 60%;
   width: 60%;
   background-color: darkcyan;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
 }
 
 .cell {
   width: calc(100% / 10);
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
