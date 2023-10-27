@@ -17,7 +17,7 @@ function generator(numberofcell) {
   let insert = "";
 
   for (i = 1; i <= numberofcell; i++) {
-    insert += "<div class='cell'>" + i + "</div>";
+    insert += "<div class='cell-easy'>" + i + "</div>";
   }
   return (box.innerHTML = insert);
 }

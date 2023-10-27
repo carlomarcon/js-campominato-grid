@@ -27,11 +27,17 @@ header {
   flex-wrap: wrap;
 }
 
-.cell {
+.cell-easy {
   width: calc(100% / 10);
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: darkcyan;
+}
+
+.cell-normal {
+}
+
+.cell-fuego {
 }
