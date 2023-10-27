@@ -26,6 +26,7 @@ function Listener(numberofcell) {
   let cell = document.querySelectorAll(".cell");
   for (i = 1; i < numberofcell; i++) {
     cell[i].addEventListener("click", function () {
+      this.style.backgroundColor = "blue";
       console.log(this.innerHTML);
     });
   }
