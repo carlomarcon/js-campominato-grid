@@ -1,14 +1,17 @@
 const box = document.querySelector(".box");
 const button = document.querySelector("button");
 const h1 = document.querySelector("h1");
+let cell = document.querySelectorAll(".cell");
 // EVOCARE FUNZIONE
-
-generator(100);
-Listener(100);
 
 button.addEventListener("click", function () {
   box.style.display = "flex";
   h1.style.display = "none";
+
+  const difficulty = document.querySelector("select").value;
+
+  generator(difficulty);
+  Listener(difficulty);
 });
 
 // FUNZIONI
@@ -17,9 +20,10 @@ function generator(numberofcell) {
   let insert = "";
 
   for (i = 1; i <= numberofcell; i++) {
-    insert += "<div class='cell-easy'>" + i + "</div>";
+    insert += "<div class='cell cell-easy'>" + i + "</div>";
   }
-  return (box.innerHTML = insert);
+
+  box.innerHTML = insert;
 }
 
 function Listener(numberofcell) {
@@ -30,6 +34,11 @@ function Listener(numberofcell) {
       console.log(this.innerHTML);
     });
   }
+  // if (numberofcell === "64") {
+  //   cell.classList.add("cell-normal");
+  // } else if (numberofcell === "49") {
+  //   cell.style.width = "calc(100%/7)";
+  // }
 }
 
 // let test = (document.createElement("h1").innerHTML = "hey");

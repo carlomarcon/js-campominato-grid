@@ -8,6 +8,10 @@ header {
   background-color: white;
   width: 100%;
   height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .wrapper {
@@ -37,7 +41,19 @@ header {
 }
 
 .cell-normal {
+  width: calc(100% / 8);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
 }
 
 .cell-fuego {
+  width: calc(100% / 7);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
 }
